@@ -1,6 +1,6 @@
 # MulleObjCCLionDemo
 
-🦁 An example CLion mulle-objc project 
+#### 🦁 An example CLion mulle-objc project 
 
 This example project is also useful as a template for new CLion projects. Follow these three steps to generate a new
 mulle-objc project based on the "Foundation".
