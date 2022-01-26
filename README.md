@@ -2,6 +2,9 @@
 
 🦁 An example CLion mulle-objc project 
 
+Use this project [as as template](generate) for your own CLion mulle-objc project. To get things to compile,
+you need the [Foundation](//github.com/MulleFoundation/Foundation) repackaged in a special format and placed
+into a folder `usr` in your project directory.
 
 ## mulle-objc version 0.20
 
