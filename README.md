@@ -8,7 +8,7 @@ In [CLion](//www.jetbrains.com/clion/) in the welcome screen choose "Get from VC
 
 ![Welcome Screen](https://user-images.githubusercontent.com/38703833/151197505-1bae347b-773d-45b2-bcf2-747827c422b5.png)
 
-You should now have the project locally and opened in CLion.
+You should now have the project local and opened in CLion.
 
 To get things to compile you need the [Foundation](//github.com/MulleFoundation/Foundation) repackaged in a special format and placed
 into a folder `usr` in your project directory.
