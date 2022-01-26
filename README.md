@@ -9,17 +9,41 @@ mulle-objc project based on the "Foundation".
 
 On GitHub [generate](https://github.com/mulle-kybernetik-tv/MulleObjCCLionDemo/generate) your own project with MulleObjCClionDemo as the template. Here we are using "myproject" as the new name.
 
-In [CLion](//www.jetbrains.com/clion/) in the welcome screen choose "Get from VCS" then enter the URL of your new project:
+In [CLion](//www.jetbrains.com/clion/) in the welcome screen or the new/open project dialog 
 
-![Welcome Screen](https://user-images.githubusercontent.com/38703833/151197505-1bae347b-773d-45b2-bcf2-747827c422b5.png)
+![Welcome](https://user-images.githubusercontent.com/38703833/151210307-5280e852-082c-4660-a79e-f4bd1cd10f21.png)
 
-You should now have the project local and opened in CLion. In a fresh installation you can now configure the **mulle-clang** compiler.
+choose "Get from VCS", then enter the URL of your new project:
+
+![URL](https://user-images.githubusercontent.com/38703833/151197505-1bae347b-773d-45b2-bcf2-747827c422b5.png)
+
+You may have to trust the project to proceed. In the New/Open Project Wizard that should now open. You
+neeed to configure the [mulle-clang](//github.com/mulle-cc/mulle-clang-project/releases) compiler (and optionally
+the [mulle-gdb](//github.com/mulle-cc/mulle-gdb/releases) debugger).
 
 ![configure](https://user-images.githubusercontent.com/38703833/151203695-9ead8c7b-c56c-4a6a-904d-005f81c06b8d.png)
 
 If this doesn't show up, check "File / Settings / Build Execution Deployment / ToolChains", which is the same dialog basically.
 
 ![ToolChains](https://user-images.githubusercontent.com/38703833/151203967-9f5ce77d-4fa2-4803-9804-a4700d8a6a25.png)
+
+On the "Toolchains > CMake" configuration page, you can leave everything as is.
+
+You should now have the local project opened in CLion. But there will be some errors, because libraries aren't installed yet:
+
+``` console
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+C_WRAP_LIB
+    linked by target "MulleObjCClionDemo" in directory /home/mulle-kybernetik-tv/CLionProjects/myproject
+FOUNDATION_WRAP_LIB
+    linked by target "MulleObjCClionDemo" in directory /home/mulle-kybernetik-tv/CLionProjects/myproject
+FOUNDATION_WRAP_STARTUP_LIB
+    linked by target "MulleObjCClionDemo" in directory /home/mulle-kybernetik-tv/CLionProjects/myproject
+
+-- Generating done
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+```
 
 ## 2. Get mulle-objc Foundation libraries
 
