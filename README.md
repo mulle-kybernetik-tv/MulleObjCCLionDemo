@@ -3,7 +3,7 @@
 #### 🦁 An example CLion mulle-objc project 
 
 This example project is also useful as a template for new CLion projects. Follow these three steps to generate a new
-mulle-objc project based on the "Foundation".
+mulle-objc project based on the [Foundation](//github.com/MulleFoundation/Foundation).
 
 ## 1. Generate new CLion project on GitHub
 
@@ -48,12 +48,11 @@ CMake Generate step failed.  Build files cannot be regenerated correctly.
 ## 2. Get mulle-objc Foundation libraries
 
 To get things to compile you need the [Foundation](//github.com/MulleFoundation/Foundation) repackaged in a special format and placed
-into a folder `usr` in your project directory. Check the "FoundationWrap" release page for possibly pre-packaged release archives.
-Otherwise, here is how to build and repackage the Foundation:
+into a folder `usr` in your project directory.
 
 ### mulle-objc version 0.20
 
-For this to work you need to repackage all the Objective-c libraries as well as mulle-sprintf of [Foundation](//github.com/MulleFoundation/Foundation) into 
+For this to work you need to repackage all the Objective-C libraries as well as mulle-sprintf of [Foundation](//github.com/MulleFoundation/Foundation) into 
 **FoundationWrap**. Place the `Foundation-startup`, `mulle-atinit`, `mulle-atexit` libraries into **FoundationWrap-startup**. Combine all the remaining
 C files into a **c-wrap** library. Create a directory `usr/include` and copy all the headers recursively there. Create a directory `usr/lib` and copy the three
 libraries there.
@@ -61,8 +60,8 @@ libraries there.
 
 ### mulle-objc version 0.21 (Future as of 1.2022) and beyond
 
-Use [FoundationWrap](//github.com/MulleFoundation/FoundationWrap) to create a directory `usr` in your project with 
-all the required headers and libraries.
+Check the [FoundationWrap](//github.com/MulleFoundation/FoundationWrap/releases)" for possibly pre-packaged release archives.
+Otherwise install the [FoundationWrap](//github.com/MulleFoundation/FoundationWrap) headers and libraries with [mulle-sde](//github.com/mulle-sde).
 
 Assuming your project is called "myproject" and has been placed into `~/CLionProjects`.
 
