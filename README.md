@@ -2,6 +2,14 @@
 
 🦁 An example CLion mulle-objc project 
 
+## CLion Configuration Step
+
+Use [CLion-settings](https://github.com/mulle-kybernetik-tv/CLion-settings) to setup CLion.
+Or if you want to do it manually, configure your toolchain so that **mulle-clang** is the C compiler and **mulle-gdb** is the debugger.
+Also [enable Objective-C support](//www.jetbrains.com/help/clion/objective-c-c-support.html) in CLion.
+
+## Generate new CLion project
+
 On GitHub [generate](https://github.com/mulle-kybernetik-tv/MulleObjCCLionDemo/generate) your own project with MulleObjCClionDemo as the template. Here we are using "myproject" as the new name.
 
 In [CLion](//www.jetbrains.com/clion/) in the welcome screen choose "Get from VCS" then enter the URL of your new project:
